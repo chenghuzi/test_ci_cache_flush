@@ -66,6 +66,10 @@ jobs:
           keys:
             - examples_built
       - run:
+          name: Clean Outputs
+          command: rm -rf output/*
+
+      - run:
           name: Generate output
           # This assumes pytest is installed via the install-package step above
           command: |
