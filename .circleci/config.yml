@@ -65,9 +65,9 @@ jobs:
       - restore_cache:
           keys:
             - examples_built
-      - run:
-          name: Clean Outputs
-          command: rm -rf output/*
+      # - run:
+      #     name: Clean Outputs
+      #     command: rm -rf output/*
 
       - run:
           name: Generate output
